@@ -1,0 +1,581 @@
+@font-face{
+      font-family:IntroFont;
+      src:url(fonts/prata/Prata-Regular.ttf);
+}
+@font-face{
+    font-family:DecoFont;
+    src:url(fonts/deco/DecoMart.ttf);
+}
+
+html{
+    
+    display:grid;
+    overflow:auto;
+    animation: fadeIn ease 5s;
+    
+    -webkit-animation: fadeIn ease 5s;
+    -moz-animation: fadeIn ease 5s;
+    -o-animation: fadeIn ease 5s;
+    -ms-animation: fadeIn ease 5s;
+}
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+@-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+@-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+@-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+@-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+
+    
+h1{
+    text-align:center;
+}
+.headersIntro{
+    font-family:DecoFont;
+}
+.buttonelem{
+    max-width:300px;
+    background-color:(255,255,255,0);
+}
+button{
+
+    background-color:(255,255,255,0);
+    border: 1px solid white;
+    border-radius:5px;
+    color: white;
+    font-family:IntroFont;
+    font-size:1em;
+    margin: 1%;
+
+    text-shadow: 2px 2px 3px rgb(27, 27, 27);
+    margin-top:10px;
+    height:auto;
+    width:100%;
+    padding:3%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+ 
+  
+}
+a{
+   
+    align-content:space-between;
+    color:white;
+    text-shadow: 2px 2px 3px rgb(27, 27, 27);
+    font-size:20px;
+    font-family:IntroFont;
+    text-transform: uppercase;
+    text-decoration:none;
+
+}
+ 
+.container{
+    
+    width: 100%;
+    max-width: inherit;  
+    z-index:-100;
+    background:url("img/marble.jpg") no-repeat;
+    background-size: cover;
+
+    background-attachment: fixed;
+    
+}
+.firstsection{
+
+    background-color: rgb(254, 254, 254,0.5);
+    
+
+    max-width:300px;
+    border-radius:2px;
+    border:black;
+    border-width: 2px;
+    border-style: solid;
+
+    padding:30px 100px;
+    z-index:10;
+ 
+    animation: MoveUpDown 5s linear infinite;
+
+ 
+    margin: 0 auto;
+    text-align: center;
+
+    font-family:IntroFont;
+    font-size:24px;
+    text-transform:uppercase;
+    
+}
+ 
+@keyframes MoveUpDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+img {
+    max-width: 100%;
+    height: auto;
+
+    text-align: center;
+    background-size: contain;
+    grid-template-columns: 200px 3fr;
+    backface-visibility: hidden;
+
+    align-content: center;
+}
+.imageOne{
+    
+    margin-top:5%;
+    transition: transform 0.5s ease-in-out;
+}
+.imageOne:hover{
+    transform: translateY(30px);
+}
+ 
+.imageThree{
+    padding:3%;
+    transition: transform 0.5s ease-in-out;
+}
+.imageThree:hover{
+    transform: translateY(10px);
+}
+
+.imageThreePics{
+
+    display: flex;
+    justify-content: center;   
+     
+}
+.imageFourPics{
+
+    display: flex;
+    justify-content: center; 
+    margin:0 auto;  
+     
+}
+.imageFourPicsii{
+    display: flex;
+    justify-content: center; 
+    margin:0 auto;  
+}
+
+.imageFour{
+
+    padding:3%;
+    transition: transform 0.5s ease-in-out;
+}
+.imageFour:hover{
+    transform: translateY(10px);
+}
+.biddingsim{
+
+  display: flex;
+  justify-content: center;
+}
+
+.softwareDiv{
+    background:url("img/blenderpoj.png");
+    background-size:contain;    
+    border-radius:12px;
+
+    margin-top:20px;
+    margin-left:35%;
+    margin-right:35%;
+
+    position:absolute;
+    z-index:2;
+    
+   
+    width:57%;
+    height:538px;
+  
+
+    transition: transform 0.5s ease-in-out;
+}
+.softwareDiv:hover{
+    transform: translateY(30px);
+
+}
+
+.softwareDivText{
+   opacity:0;
+   font-family:DecoFont;
+   text-shadow: 2px 2px 3px rgba(255, 250, 250, 0.7);
+
+   margin:0 auto;
+   width:100%;
+   height:538px;
+  
+   margin-top:30%;
+
+   font-size:23px;
+   text-align:center;
+   
+
+   transition: opacity 0.3s;
+}
+.softwareDivText:hover{
+    opacity:1;
+   
+}
+.softwareDivTwoText{
+    opacity:0;
+    margin:0 auto;
+    margin-top:15%;
+    font-family:DecoFont;
+    width:100%;
+    height:267px;
+    font-size:16px;
+    text-align:center;
+
+    text-shadow: 2px 2px 3px rgba(255, 250, 250, 0.7);
+     
+    transition: opacity 0.3s;
+ }
+
+ .softwareDivTwoText:hover{
+     opacity:1;
+ }
+ 
+.softwareDivTwo{
+    background:url("img/blenderrender.png");
+    background-size:contain;
+    border-radius:12px;
+  
+    margin-top:25%;
+    margin-left:10%;
+    position:absolute;
+    z-index:0;
+
+    width:403px;
+    max-height:267px; 
+    
+    float:right; 
+
+    
+    transition: transform 0.5s ease-in-out;
+    
+}
+.softwareDivTwo:hover{
+    transform: translateY(10px);
+}
+
+.innovativetext{
+
+    max-width: 100%; 
+    height: auto;
+    max-width:300px;
+    max-height:1px;
+    font-family:introFont;
+
+    z-index:-3;
+    color:white;
+    margin-right:60%;
+
+    width:100%;
+
+    margin:85px;
+
+    padding:10px;
+    text-align:center;
+    font-size:53px;
+
+
+}
+ 
+.innovativetwo{
+   
+    font-family:introFont;
+    position:absolute;
+
+    width:100%;
+    
+    max-width:200px;
+    max-height:800px;
+
+    margin-left:40%;
+    margin-right:10%;
+    margin-top:200px;
+    color:white;
+    float:right;
+    padding:10px;
+     
+    text-align:left;
+    font-size:33px;
+
+}
+.softwaredevsection{
+  
+  margin-top:50%;
+  transform:translateY(20%);
+  justify-content: center;
+  align-items: center;
+ 
+}
+ 
+.sfdone{
+
+    z-index:5;
+    width:75%;
+    margin:0 auto;
+    margin-top:10%;
+    overflow:hidden;
+    position:relative;
+    background-color:rgba(255, 250, 250, 0.7);
+
+    border-radius:5px;
+}
+ 
+.backendexp {
+  
+    position:absolute;
+    z-index:0;
+
+    
+}
+.sftwo{
+
+    width:75%;
+    margin:0 auto;
+
+    overflow:hidden;
+    position:relative;
+
+    z-index: 3;
+    margin-bottom:20px;
+    border-radius:5px;
+
+    transition:  transform 1.5s;
+    background-color:rgba(255, 250, 250, 0.7);
+ 
+}
+.sftwo:hover{
+    transform:translateY(40px);
+}
+
+  .reactImage{
+      height:auto;
+      width:200px;
+    transition: transform 1.5s;
+
+}
+  .reactImage:hover{
+    transform:rotate(45deg);
+    
+}
+.angularImage{
+    height:auto;
+    width:200px;
+  transition: transform 1.5s;
+
+}
+.angularImage:hover{
+  transform:rotate(45deg);
+  
+}
+ 
+
+.appdevsection{
+    display:grid;
+    margin:auto;
+    width:75%;
+    height:auto;
+    background-color:rgba(255, 255, 255, 0.7);
+    grid-gap: 5px;
+    grid-template-columns: repeat(1, 1fr);
+      
+
+}
+.imageFive{
+    transition: transform 1s; 
+
+}
+.imageFive:hover{
+    transform: translateY(10px);
+
+}
+.imageSix{
+    transition: transform 1s;
+
+
+}
+.imageSix:hover{
+    transform: translateY(10px);
+
+
+}
+.imageSeven{
+    transition: transform 1s;
+
+}
+.imageSeven:hover{
+    transform: translateY(10px);
+
+}
+.imageEight{
+    transition: transform 1s;
+
+}
+.imageEight:hover{
+    transform: translateY(10px);
+
+}
+.imageNine{
+    transition: transform 1s;
+
+}
+
+.imageNine:hover{
+    transform: translateY(10px);
+
+}
+
+.socialmedfooter{
+  
+    background-color:rgba(255, 255, 255, 0.7);
+    margin-top:10px;
+    height:auto;
+    width:100%;
+    padding:3%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    
+}
+ 
+.containerabout{
+    width: 100%;
+
+    max-width: inherit;  
+    z-index:-100;
+    background:url("img/marble.jpg") no-repeat;
+
+ 
+    background-attachment: fixed;
+
+}
+ 
+.fullstack{
+    font-family:DecoFont;
+    
+ 
+    width:75%;
+    margin:0 auto;
+
+    overflow:hidden;
+    position:relative;
+
+    z-index: 3;
+    margin-bottom:20px;
+    border-radius:5px;
+    text-align:center;
+
+    transition:  transform 1.5s;
+    background-color:rgba(255, 250, 250, 0.7);
+
+
+}
+
+.centeredsocial{
+    
+    background-color:(255,255,255,0);
+    border: 1px solid white;
+    border-radius:5px;
+
+    color: white;
+    font-family:IntroFont;
+    font-size:1em;
+ 
+
+    text-shadow: 2px 2px 3px rgb(27, 27, 27);
+   
+    height:auto;
+    width:20%;
+    height:1%;
+
+   
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+}
+
+.description{
+ 
+        font-family:DecoFont;
+        
+     
+        width:85%;
+        margin:0 auto;
+    
+        overflow:hidden;
+        position:relative;
+    
+        z-index: 3;
+        margin-bottom:5%;
+        margin-top:5%;
+        border-radius:5px;
+        text-align:center;
+    
+        transition:  transform 1.5s;
+        background-color:rgba(255, 250, 250, 0.7);  
+}
+
+.aboutsection{
+    background:url("img/skies.jpeg");    
+
+    max-width:300px;
+    border-radius:2px;
+    border:black;
+    border-width: 2px;
+    border-style: solid;
+
+    padding:30px 100px;
+    z-index:10;
+ 
+    animation: MoveUpDown 5s linear infinite;
+
+ 
+    margin: 0 auto;
+    text-align: center;
+
+    font-family:IntroFont;
+    font-size:18px;
+ 
+
+}
+ 
+.address{
+
+    font-family:IntroFont;
+    display:flex;
+
+    padding:3%;
+    border:rgba(255, 250, 250, 0.7);
+    border-width:2px;
+    border-style:solid;
+
+    text-align:center;
+    
+}
